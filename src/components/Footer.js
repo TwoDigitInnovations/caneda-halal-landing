@@ -121,7 +121,7 @@ export default function Footer() {
         <div className="border-t border-white border-opacity-20 pt-8">
           <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              All rights reserved &copy; 2023 Canada Halal Services
+              All rights reserved &copy; 2025 Canada Halal Services
             </div>
           </div>
         </div>
