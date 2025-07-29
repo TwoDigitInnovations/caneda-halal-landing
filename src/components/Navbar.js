@@ -26,7 +26,7 @@ const Navbar = () => {
               onMouseLeave={() => setopen(false)}
             >
               <div>
-                <button className="flex items-center font-semibold text-gray-700 hover:text-gray-900 focus:outline-none">
+                <button className="relative flex items-center font-semibold text-gray-700 hover:text-gray-900 px-2 py-2 cursor-pointer transition-colors duration-200 hover:bg-green-50 rounded-xl group focus:outline-none">
                   Services
                   <span
                     className={`ml-1 transition-transform duration-300 ${
@@ -35,9 +35,10 @@ const Navbar = () => {
                   >
                     <FaChevronDown className="w-4 h-4" />
                   </span>
+                  <span className="absolute left-0 bottom-0 w-full  scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
                 </button>
                 {open && (
-                  <ul className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-lg py-2 z-20 transition-all duration-300 animate-fadeIn">
+                  <ul className="absolute left-0  w-64 bg-green-50 rounded-lg shadow-lg py-2 z-20 transition-all duration-300 animate-fadeIn">
                     <li className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center">
                       CanadaHalal CHMP Ride
                     </li>
@@ -72,16 +73,18 @@ const Navbar = () => {
             `}</style>
 
             <button
-              className="flex items-center font-semibold text-gray-700 hover:text-gray-900"
+              className="relative flex items-center font-semibold text-gray-700 hover:text-gray-900 px-2 py-2 cursor-pointer rounded-md roun transition-colors duration-200 hover:bg-neutral-100 group"
               onClick={() => (window.location.href = "/AboutUs")}
             >
               About us
+              <span className="absolute left-0 bottom-0 w-full h-[2px] bg-green-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
             </button>
             <button
-              className="flex items-center font-semibold text-gray-700 hover:text-gray-900"
+              className="relative flex items-center font-semibold text-gray-700 hover:text-gray-900 px-2 py-2 rounded-md cursor-pointer transition-colors duration-200 hover:bg-neutral-100 group"
               onClick={() => (window.location.href = "/Faq")}
             >
               Faqs
+              <span className="absolute left-0 bottom-0 w-full h-[2px] bg-green-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
             </button>
           </div>
 
