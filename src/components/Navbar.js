@@ -131,7 +131,7 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <div className="mb-2">
               <span className="block px-3 py-2 rounded-md text-base font-bold text-green-700">
-                Services
+                Canada Halal Services
               </span>
               <ul className="pl-2">
                 <li>
