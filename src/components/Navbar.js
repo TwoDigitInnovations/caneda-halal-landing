@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [open, setopen] = useState(false);
-  // Track hover for dropdown
-  const [dropdownHover, setDropdownHover] = useState(false);
+
+  const router = useRouter();
   return (
     <nav className="bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,7 +15,7 @@ const Navbar = () => {
             <img
               src="./logo.png"
               className="w-20 h-20"
-              onClick={() => (window.location.href = "/")}
+             onClick={() => router.push("/")}
               alt="Logo"
             />
           </div>
@@ -27,7 +28,7 @@ const Navbar = () => {
             >
               <div>
                 <button className="relative flex items-center font-semibold text-gray-700 hover:text-gray-900 px-2 py-2 cursor-pointer transition-colors duration-200 hover:bg-green-50 rounded-xl group focus:outline-none">
-                  Services
+                  Canada Halal Services
                   <span
                     className={`ml-1 transition-transform duration-300 ${
                       open ? "rotate-180" : "rotate-0"
@@ -38,24 +39,36 @@ const Navbar = () => {
                   <span className="absolute left-0 bottom-0 w-full  scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
                 </button>
                 {open && (
-                  <ul className="absolute left-0  w-64 bg-green-50 rounded-lg shadow-lg py-2 z-20 transition-all duration-300 animate-fadeIn">
-                    <li className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center">
-                       CHMP Ride
+                  <ul className="absolute left-0  w-48 bg-green-50 rounded-lg shadow-lg py-1.5 z-20 transition-all duration-300 animate-fadeIn">
+                    <li
+                      className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
+                      onClick={() => router.push("/CHMP-Ride")}
+                    >
+                      CHMP Ride
                     </li>
-                    <li className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center">
-                       Food Delivery
+                    <li
+                      className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
+                      onClick={() => router.push("/Food-Delivery")}
+                    >
+                      Food Delivery
                     </li>
-                    <li className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center">
-                       Online Shopping
+                    <li
+                      className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
+                      onClick={() => router.push("/Online-Shopping")}
+                    >
+                      Online Shopping
                     </li>
-                    <li className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center">
-                       Grocery Delivery
+                    <li
+                      className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
+                      onClick={() => router.push("/Grocery-Delivery")}
+                    >
+                      Grocery Delivery
                     </li>
                   </ul>
                 )}
               </div>
             </div>
-           
+
             <style jsx>{`
               @keyframes fadeIn {
                 from {
@@ -74,14 +87,14 @@ const Navbar = () => {
 
             <button
               className="relative flex items-center font-semibold text-gray-700 hover:text-gray-900 px-2 py-2 cursor-pointer rounded-md roun transition-colors duration-200 hover:bg-neutral-100 group"
-              onClick={() => (window.location.href = "/AboutUs")}
+              onClick={() => router.push("/AboutUs")}
             >
               About us
               <span className="absolute left-0 bottom-0 w-full h-[2px] bg-green-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
             </button>
             <button
               className="relative flex items-center font-semibold text-gray-700 hover:text-gray-900 px-2 py-2 rounded-md cursor-pointer transition-colors duration-200 hover:bg-neutral-100 group"
-              onClick={() => (window.location.href = "/Faq")}
+              onClick={() => router.push("/Faq")}
             >
               Faqs
               <span className="absolute left-0 bottom-0 w-full h-[2px] bg-green-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
@@ -116,19 +129,57 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a
-              href="#"
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-            >
-              Services
-            </a>
-
-            <a
-              href="#"
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+            <div className="mb-2">
+              <span className="block px-3 py-2 rounded-md text-base font-bold text-green-700">
+                Services
+              </span>
+              <ul className="pl-2">
+                <li>
+                  <button
+                    className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-green-50"
+                    onClick={() => router.push("/CHMP-Ride")}
+                  >
+                    CHMP Ride
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-green-50"
+                    onClick={() => router.push("/Food-Delivery")}
+                  >
+                    Food Delivery
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-green-50"
+                    onClick={() => router.push("/Online-Shopping")}
+                  >
+                    Online Shopping
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-green-50"
+                    onClick={() => router.push("/Grocery-Delivery")}
+                  >
+                    Grocery Delivery
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <button
+              className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+              onClick={() => (window.location.href = "/AboutUs")}
             >
               About us
-            </a>
+            </button>
+            <button
+              className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+              onClick={() => (window.location.href = "/Faq")}
+            >
+              Faqs
+            </button>
           </div>
         </div>
       )}

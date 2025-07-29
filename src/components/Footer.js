@@ -21,17 +21,17 @@ import {
 import { LuBriefcaseBusiness } from "react-icons/lu";
 export default function Footer() {
   return (
-    <div className="bg-[#2C6140] text-white pt-12 pb-8 px-4 sm:px-6 lg:px-8">
+    <div className="bg-[#2C6140] text-white pt-12 pb-8 px-12 sm:px-10 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4">
+          <div className="flex flex-col md:flex-row justify-between  mb-4">
             <div className=" md:mb-0">
              <img
                   src="./logo.png"
                   className="w-32 object-cover cursor-pointer"
                   alt="app-store"
                 />
-              <div className="flex flex-col items-center mt-4 ">
+              <div className="flex flex-col  mt-4 ">
                 <img
                   src="./app-store.png"
                   className="w-32 object-cover cursor-pointer"
@@ -45,32 +45,40 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="md:items-start items-center flex flex-col">
+          <div className="">
             <h3 className="text-lg font-semibold mb-4 flex items-center">
               <Briefcase className="w-5 h-5 mr-2" />
               Our services
             </h3>
             <ul className="space-y-3">
-              <li className="flex items-center">
+              <li className="flex items-center"
+               onClick={() => router.push("/CHMP-Ride")}
+              >
                 <Bike className="w-4 h-4 mr-2" />
                  CHMP Ride
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center"
+               onClick={() => router.push("/Food-Delivery")}
+              >
                 <Utensils className="w-4 h-4 mr-2" />
                  Food Delievry
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center"
+               onClick={() => router.push("/Online-Shopping")}
+              >
                 <ShoppingCart className="w-4 h-4 mr-2" />
                  Online Shopping
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center"
+               onClick={() => router.push("/Grocery-Delivery")}
+              >
                 <LuBriefcaseBusiness className="w-4 h-4 mr-2" />
                  Grocery Delivery
               </li>
             </ul>
           </div>
 
-          <div className="md:items-start items-center flex flex-col">
+          <div className="">
             <h3 className="text-lg font-semibold mb-4 flex items-center">
               <Handshake className="w-5 h-5 mr-2" />
               Our partners
@@ -91,7 +99,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="md:items-start items-center flex flex-col">
+          <div className="">
             <h3 className="text-lg font-semibold mb-4 flex items-center">
               <Info className="w-5 h-5 mr-2" />
               Company
@@ -106,7 +114,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="md:items-start items-center flex flex-col">
+          <div className="">
             <h3 className="text-lg font-semibold mb-4 flex items-center">
               <LuBriefcaseBusiness className="w-5 h-5 mr-2" />
               Work with us

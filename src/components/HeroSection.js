@@ -13,30 +13,34 @@ const MultiServiceHero = () => {
   }, []);
 
   const services = [
-    { icon: "🏕️", name: "Camp & Ride", desc: "Adventure booking" },
-    { icon: "👗", name: "Fashion", desc: "Latest trends & styles" },
-    { icon: "🍕", name: "Food", desc: "Fresh food delivered" },
-    { icon: "🚗", name: "Driver", desc: "Safe & reliable rides" },
+    { icon: "./online-booking.png", name: "CHMP & Ride", desc: "Adventure booking" },
+    { icon: "./online-shopping.png", name: "Fashion", desc: "Latest trends & styles" },
+    { icon: "./delivery.png", name: "Food", desc: "Fresh food delivered" },
+    {
+      icon: "./shopping-bag.png",
+      name: "Grocery",
+      desc: "Safe & Fresh Grocery",
+    },
   ];
 
   const features = [
     {
-      icon: "🏕️",
-      title: "CHMP Ride Booking",
-      desc: "Book camping trips, bike rentals, and outdoor adventures. Explore nature with our curated experiences and professional guides.",
+      icon: "./online-booking.png",
+      title: "CHMP Ride",
+      desc: "Book CHMPing trips, bike rentals, and outdoor adventures. Explore nature with our curated experiences and professional guides.",
     },
     {
-      icon: "👗",
+      icon: "./online-shopping.png",
       title: "Online Shopping",
       desc: "Discover the latest fashion trends. Shop from top brands with exclusive deals and fast delivery right to your doorstep.",
     },
     {
-      icon: "🍕",
+      icon: "./delivery.png",
       title: "Food Delivery",
       desc: "Order from your favorite restaurants. Fresh ingredients, hot meals, and quick delivery for all your cravings.",
     },
     {
-      icon: "🚗",
+     icon: "./shopping-bag.png",
       title: "Geocery Delievry",
       desc: "Safe and reliable transportation. Professional drivers, real-time tracking, and affordable rates for all your travel needs.",
     },
@@ -50,7 +54,7 @@ const MultiServiceHero = () => {
         animationDelay: `${index * 0.5}s`,
       }}
     >
-      <div className="text-2xl mb-2">{service.icon}</div>
+      <img className="w-18 mb-2" src={service.icon}/>
       <div className="font-bold text-gray-800">{service.name}</div>
       <div className="text-sm text-gray-600">{service.desc}</div>
     </div>
@@ -62,7 +66,7 @@ const MultiServiceHero = () => {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center w-full">
           <div className="z-10">
             <h1
-              className={`text-4xl md:text-6xl md:mt-0 mt-4 font-black text-gray-900 leading-tight mb-6 transform transition-all duration-1000 ${
+              className={`text-4xl md:text-5xl md:mt-0 mt-4 font-black text-gray-900 capitalize leading-tight mb-6 transform transition-all duration-1000 ${
                 isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-12 opacity-0"
@@ -72,7 +76,7 @@ const MultiServiceHero = () => {
             </h1>
 
             <h2
-              className={`text-5xl md:text-7xl font-black bg-gradient-to-r from-green-600 via-green-500 to-emerald-500 bg-clip-text text-transparent mb-8 transform transition-all duration-1000 delay-300 ${
+              className={`text-4xl md:text-5xl font-black bg-gradient-to-r from-green-600 via-green-500 to-emerald-500 bg-clip-text text-transparent mb-8 transform capitalize transition-all duration-1000 delay-300 ${
                 isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-12 opacity-0"
@@ -105,7 +109,7 @@ const MultiServiceHero = () => {
               <span className="text-2xl">→</span>
             </button>
 
-            {/* Stats Section */}
+            
             <div
               className={`bg-white/60 backdrop-blur-xl border border-gray-200 rounded-3xl p-8 mt-12 grid grid-cols-2 lg:grid-cols-4 gap-8 shadow-lg transform transition-all duration-1000 delay-700 ${
                 isVisible
@@ -156,32 +160,36 @@ const MultiServiceHero = () => {
             </div>
 
             <div
-              className={`w-72 h-[550px] md:w-80 md:h-[600px] bg-gradient-to-b from-gray-100 to-gray-200 rounded-[2rem] md:rounded-[3rem] p-3 md:p-5 shadow-2xl relative z-10 transform transition-all duration-1000 delay-900 ${
+              className={`w-80 h-[550px] md:w-84 md:h-[600px] bg-gradient-to-b from-gray-100 to-gray-200 rounded-[2rem] md:rounded-[3rem] p-3 md:p-5 shadow-2xl relative z-10 transform transition-all duration-1000 delay-900 ${
                 isVisible
                   ? "translate-x-0 opacity-100"
                   : "translate-x-24 opacity-0"
               }`}
             >
               <div className="w-full h-full bg-gray-900 rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden relative">
-                <div className="bg-gradient-to-r from-green-600 to-emerald-600 p-5 md:p-8 text-center text-white">
+                <div className="bg-gradient-to-r from-green-600 to-emerald-600 p-4 md:p-6 flex gap-4 text-white">
+                  <img src="./logo.png" className="w-16 pt-4 mb-4 mx-auto" alt="Logo" />
+                  <div className="pt-4"> 
                   <div className="text-xl md:text-2xl font-black mb-2">
                     LifeEase
                   </div>
                   <div className="text-xs md:text-sm opacity-90">
                     Everything in one place
                   </div>
+                  </div>
                 </div>
 
-              
                 <div className="p-4 py-16 md:p-4 md:py-14 grid grid-cols-2 gap-4 md:gap-4 h-[calc(100%-110px)] md:h-[calc(100%-140px)]">
                   {services.map((service, index) => (
                     <div
                       key={index}
                       className="bg-gradient-to-br from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 rounded-xl md:rounded-2xl p-2 flex flex-col items-center justify-center text-center text-white transition-all duration-300 hover:scale-105 cursor-pointer"
                     >
-                      <div className="text-2xl md:text-3xl mb-2 md:mb-3">
-                        {service.icon}
-                      </div>
+                      <img
+                        src={service.icon}
+                        className="w-18 mb-2 md:mb-3"
+                      />
+
                       <div className="text-xs md:text-sm font-bold">
                         {service.name}
                       </div>
@@ -193,13 +201,13 @@ const MultiServiceHero = () => {
           </div>
         </div>
 
-        <div className="absolute md:-bottom-4 left-1/2 transform -translate-x-1/2 text-gray-400 animate-bounce mb-4 bottom-2 text-center">
+        <div className="absolute md:bottom-0  left-1/2 transform -translate-x-1/2 text-gray-400 animate-bounce mb-4 bottom-0 text-center">
           <div className="text-2xl">↓</div>
           <div className="text-sm mt-2">Scroll for more</div>
         </div>
       </section>
 
-      {/* Features Section */}
+    
       <section className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-20 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -219,12 +227,11 @@ const MultiServiceHero = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white/80 backdrop-blur-xl border border-gray-200 rounded-3xl p-8 text-center hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
+                className="bg-white/80 backdrop-blur-xl border border-gray-200 rounded-3xl p-8 flex justify-center items-center flex-col hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                  {feature.icon}
-                </div>
+                <img src={feature.icon} className="w-16 mb-6 group-hover:scale-110 transition-transform duration-300" />
+                  
                 <div className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors duration-300">
                   {feature.title}
                 </div>

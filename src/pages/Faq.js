@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 const faqData = [
   {
-    question: "How do I book a camp riding session?",
+    question: "How do I book a CHMP riding session?",
     answer:
-      "To book a camp riding session, go to our Camp Riding section, select your preferred date and time, and complete the booking process. You will receive a confirmation email once your booking is successful.",
+      "To book a CHMP riding session, go to our CHMP Riding section, select your preferred date and time, and complete the booking process. You will receive a confirmation email once your booking is successful.",
   },
   {
     question: "What fashion shopping options are available?",
@@ -24,7 +24,7 @@ const faqData = [
   {
     question: "Can I track my order after placing it?",
     answer:
-      "Yes, you can track your order status in real-time from your account dashboard. We provide live updates for all deliveries including food, fashion, and camp bookings.",
+      "Yes, you can track your order status in real-time from your account dashboard. We provide live updates for all deliveries including food, fashion, and CHMP bookings.",
   },
   {
     question: "What payment methods are accepted?",
@@ -34,7 +34,7 @@ const faqData = [
   {
     question: "Is there a cancellation policy for bookings?",
     answer:
-      "Yes, you can cancel your camp riding or driver booking up to 24 hours before the scheduled time for a full refund. Please check our cancellation policy for details.",
+      "Yes, you can cancel your CHMP riding or driver booking up to 24 hours before the scheduled time for a full refund. Please check our cancellation policy for details.",
   },
   {
     question: "How do I contact customer support?",
@@ -44,7 +44,7 @@ const faqData = [
   {
     question: "Are there any discounts or offers available?",
     answer:
-      "We regularly offer discounts and special deals on fashion, food, and camp bookings. Subscribe to our newsletter or check the Offers section for the latest promotions.",
+      "We regularly offer discounts and special deals on fashion, food, and CHMP bookings. Subscribe to our newsletter or check the Offers section for the latest promotions.",
   },
   {
     question: "Is my personal information secure?",
