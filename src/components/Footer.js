@@ -53,19 +53,19 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Bike className="w-4 h-4 mr-2" />
-                CanadaHalal CHMP Ride
+                 CHMP Ride
               </li>
               <li className="flex items-center">
                 <Utensils className="w-4 h-4 mr-2" />
-                CanadaHalal Food Delievry
+                 Food Delievry
               </li>
               <li className="flex items-center">
                 <ShoppingCart className="w-4 h-4 mr-2" />
-                CanadaHalal Online Shopping
+                 Online Shopping
               </li>
               <li className="flex items-center">
                 <LuBriefcaseBusiness className="w-4 h-4 mr-2" />
-                CanadaHalal Grocery Delivery
+                 Grocery Delivery
               </li>
             </ul>
           </div>

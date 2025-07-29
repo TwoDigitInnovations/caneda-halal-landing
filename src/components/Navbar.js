@@ -40,16 +40,16 @@ const Navbar = () => {
                 {open && (
                   <ul className="absolute left-0  w-64 bg-green-50 rounded-lg shadow-lg py-2 z-20 transition-all duration-300 animate-fadeIn">
                     <li className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center">
-                      CanadaHalal CHMP Ride
+                       CHMP Ride
                     </li>
                     <li className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center">
-                      CanadaHalal Food Delivery
+                       Food Delivery
                     </li>
                     <li className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center">
-                      CanadaHalal Online Shopping
+                       Online Shopping
                     </li>
                     <li className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center">
-                      CanadaHalal Grocery Delivery
+                       Grocery Delivery
                     </li>
                   </ul>
                 )}
