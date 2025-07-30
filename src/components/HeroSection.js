@@ -54,7 +54,7 @@ const MultiServiceHero = () => {
       desc: "Order from your favorite restaurants. Fresh ingredients, hot meals, and quick delivery for all your cravings.",
     },
     {
-      Link: "/Grocery-Delivery",
+      Link: "/GroceryDelivery",
       icon: "./shopping-bag.png",
       title: "Geocery Delievry",
       desc: "Safe and reliable transportation. Professional drivers, real-time tracking, and affordable rates for all your travel needs.",
