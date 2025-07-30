@@ -42,7 +42,7 @@ const Navbar = () => {
                   <ul className="absolute left-0  w-48 bg-green-50 rounded-lg shadow-lg py-1.5 z-20 transition-all duration-300 animate-fadeIn">
                     <li
                       className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
-                      onClick={() => router.push("/CHMP-Ride")}
+                      onClick={() => router.push("/CHMPRide")}
                     >
                       CHMP Ride
                     </li>
@@ -137,7 +137,7 @@ const Navbar = () => {
                 <li>
                   <button
                     className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-green-50"
-                    onClick={() => router.push("/CHMP-Ride")}
+                    onClick={() => router.push("/CHMPRide")}
                   >
                     CHMP Ride
                   </button>

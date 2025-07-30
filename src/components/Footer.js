@@ -24,7 +24,7 @@ export default function Footer() {
   const router = useRouter();
   return (
     <div className="bg-[#2C6140] text-white pt-12 pb-8 px-12 sm:px-10 lg:px-8">
-      <div className="max-w-7xl mx-auto px-12 sm:px-10 lg:px-8">
+      <div className="max-w-7xl mx-auto px-8 sm:px-10 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           <div className="flex flex-col md:flex-row justify-between  mb-4">
             <div className=" md:mb-0">
@@ -55,7 +55,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li
                 className="flex items-center cursor-pointer"
-                onClick={() => router.push("/CHMP-Ride")}
+                onClick={() => router.push("/CHMPRide")}
               >
                 <Bike className="w-4 h-4 mr-2" />
                 CHMP Ride

@@ -38,7 +38,7 @@ export default function OnlineShopping() {
           <p className="text-xl md:text-2xl text-gray-700 mb-8 animate-fadeIn">Shop smarter, live better.<br/>Discover the best products and deals, delivered to your door.<br/><span className="text-green-600 font-bold">Fashion, electronics, groceries, and more!</span></p>
           <button className="bg-gradient-to-r from-green-600 to-emerald-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-scaleIn mt-2">Start Shopping</button>
         </div>
-        <div className="md:w-[600px] w-[400px] mt-4 md:mt-0 flex justify-center animate-scaleIn">
+        <div className="md:w-[600px] w-[370px] mt-4 md:mt-0 flex justify-center animate-scaleIn">
           <img
             src="https://images.pexels.com/photos/3965544/pexels-photo-3965544.jpeg?auto=compress&w=800&q=80"
             alt="Online Shopping Hero"

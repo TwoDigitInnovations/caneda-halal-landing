@@ -37,7 +37,7 @@ function GroceryDelivery() {
           <p className="text-xl md:text-xl text-gray-800 mb-8 animate-fadeIn">Freshness at your doorstep.<br/>Order groceries online and enjoy fast, reliable delivery.<br/><span className="text-green-600 font-bold">Quality, convenience, and savings!</span><br/><br/>Shop from local stores, get daily essentials, and track your order in real-time. Our delivery partners are background-checked and our service is designed for your comfort and safety.</p>
           <button className="bg-gradient-to-r from-green-600 to-yellow-500 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-scaleIn mt-2">Order Now</button>
         </div>
-        <div className="md:w-[600px] w-[400px] mt-6 md:mt-0 flex justify-center animate-scaleIn">
+        <div className="md:w-[600px] w-[370px] mt-6 md:mt-0 flex justify-center animate-scaleIn">
           <img
             src="https://images.unsplash.com/photo-1588964895597-cfccd6e2dbf9?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Grocery Delivery Hero"

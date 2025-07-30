@@ -38,7 +38,7 @@ const rideSections = [
           <p className="text-xl md:text-2xl text-gray-700 mb-8 animate-fadeIn">Your journey, your way.<br/>Book safe, reliable rides for every occasion.<br/><span className="text-blue-600 font-bold">Adventure, comfort, and convenience!</span><br/><br/>With CHMP Ride, you get instant booking, real-time tracking, and a choice of vehicles for every need. Our drivers are background-checked and our cars are sanitized regularly for your safety.</p>
           <button className="bg-gradient-to-r from-blue-600 to-green-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-scaleIn mt-2">Book a Ride</button>
         </div>
-        <div className="md:mt-0 mt-8 md:w-[600px] w-[400px] flex justify-center animate-scaleIn">
+        <div className="md:mt-0 mt-8 md:w-[600px] w-[370px] flex justify-center animate-scaleIn">
           <img
             src="./camp-hero.jpg"
             alt="CHMP Ride Hero"

@@ -36,7 +36,7 @@ const MultiServiceHero = () => {
 
   const features = [
     {
-      Link: "/CHMP-Ride",
+      Link: "/CHMPRide",
       icon: "./online-booking.png",
       title: "CHMP Ride",
       desc: "Book CHMPing trips, bike rentals, and outdoor adventures. Explore nature with our curated experiences and professional guides.",
