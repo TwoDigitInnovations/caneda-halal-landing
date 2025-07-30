@@ -31,13 +31,13 @@ function GroceryDelivery() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-yellow-50 text-gray-900">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto bg-gradient-to-r from-green-100 via-yellow-50 to-green-50 rounded-3xl shadow-2xl mb-12">
+      <section className="md:py-20 py-8 px-8 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto bg-gradient-to-r from-green-100 via-yellow-50 to-green-50 rounded-3xl shadow-2xl mb-12">
         <div className="md:w-1/2 text-left md:pr-12">
-          <h1 className="text-4xl md:text-5xl font-black text-green-700 mb-6 animate-fadeInUp">Grocery Delivery</h1>
+          <h1 className="text-3xl md:text-5xl font-black text-green-700 mb-6 animate-fadeInUp">Grocery Delivery</h1>
           <p className="text-xl md:text-xl text-gray-800 mb-8 animate-fadeIn">Freshness at your doorstep.<br/>Order groceries online and enjoy fast, reliable delivery.<br/><span className="text-green-600 font-bold">Quality, convenience, and savings!</span><br/><br/>Shop from local stores, get daily essentials, and track your order in real-time. Our delivery partners are background-checked and our service is designed for your comfort and safety.</p>
           <button className="bg-gradient-to-r from-green-600 to-yellow-500 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-scaleIn mt-2">Order Now</button>
         </div>
-        <div className="md:w-[600px] w-[370px] mt-6 md:mt-0 flex justify-center animate-scaleIn">
+        <div className="md:w-[600px] w-[330px] mt-6 md:mt-0 flex justify-center animate-scaleIn">
           <img
             src="https://images.unsplash.com/photo-1588964895597-cfccd6e2dbf9?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Grocery Delivery Hero"
@@ -51,7 +51,7 @@ function GroceryDelivery() {
       {grocerySections.map((section, idx) => (
         <section
           key={idx}
-          className={`py-10 px-4 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto ${idx % 2 === 1 ? "md:flex-row-reverse" : ""}`}
+          className={`py-10 px-8 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto ${idx % 2 === 1 ? "md:flex-row-reverse" : ""}`}
         >
           <div className="md:w-1/2 animate-fadeInUp">
             <img
@@ -69,7 +69,7 @@ function GroceryDelivery() {
       ))}
 
       {/* Features Section */}
-      <section className="py-16 px-4 sm:px-8 lg:px-16 bg-white rounded-3xl shadow-2xl max-w-7xl mx-auto mt-12 animate-fadeIn">
+      <section className="md:py-16 py-8 px-8 sm:px-8 lg:px-16 bg-white rounded-3xl shadow-2xl max-w-7xl mx-auto mt-12 animate-fadeIn">
         <h2 className="text-3xl md:text-4xl font-black text-green-700 mb-8 text-center">Key Features</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
@@ -104,8 +104,8 @@ function GroceryDelivery() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-8 lg:px-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-black text-green-700 mb-6 animate-fadeInUp">Ready to shop fresh?</h2>
+      <section className="md:py-16 py-10 px-4 sm:px-8 lg:px-16 text-center">
+        <h2 className="text-2xl md:text-4xl font-black text-green-700 mb-6 animate-fadeInUp">Ready to shop fresh?</h2>
         <p className="text-lg text-gray-800 mb-8 animate-fadeIn">Sign up now and enjoy the best grocery delivery experience in your city.</p>
         <button className="bg-gradient-to-r from-green-600 to-yellow-500 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-scaleIn">Order Now</button>
       </section>

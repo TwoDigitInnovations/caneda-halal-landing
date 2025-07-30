@@ -32,7 +32,7 @@ const AboutUs = () => {
         style={{ backgroundColor: '#2C6140' }}
       >
         <div className="max-w-7xl mx-auto text-center animate-fadeInUp">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg">About Canada halal market Place</h1>
+          <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg">About Canada halal market Place</h1>
           <p className="text-xl text-white opacity-90 max-w-3xl mx-auto animate-fadeIn">
             Your one-stop platform for camping adventures, fashion, food delivery, and transportation services.
           </p>
@@ -40,9 +40,9 @@ const AboutUs = () => {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="py-16 px-8 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12 animate-fadeInUp">
-          <h2 className="text-3xl font-extrabold mb-4 tracking-tight" style={{ color: '#2C6140' }}>Our Story</h2>
+          <h2 className="text-2xl md:text-3xl font-extrabold mb-4 tracking-tight" style={{ color: '#2C6140' }}>Our Story</h2>
           <div className="w-24 h-1 bg-green-700 mx-auto mb-8"></div>
         </div>
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -68,7 +68,7 @@ const AboutUs = () => {
       </section>
 
       {/* Our Services Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-green-50 to-blue-50">
+      <section className="md:py-16 py-10 px-8 sm:px-6 lg:px-8 bg-gradient-to-br from-green-50 to-blue-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 animate-fadeInUp">
             <h2 className="text-3xl font-extrabold mb-4 tracking-tight" style={{ color: '#2C6140' }}>Our Services</h2>
@@ -128,7 +128,7 @@ const AboutUs = () => {
       </section>
 
       {/* Our Values Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="md:py-16 py-10 px-8 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12 animate-fadeInUp">
           <h2 className="text-3xl font-extrabold mb-4 tracking-tight" style={{ color: '#2C6140' }}>Our Values</h2>
           <div className="w-24 h-1 bg-green-700 mx-auto mb-8"></div>
@@ -157,14 +157,14 @@ const AboutUs = () => {
 
       {/* CTA Section */}
       <section 
-        className="py-16 px-4 sm:px-6 lg:px-8 text-center bg-gradient-to-br from-green-700 via-emerald-600 to-green-800 rounded-3xl shadow-2xl animate-fadeInUp mb-4 max-w-7xl mx-auto"
+        className="md:py-16 py-10 px-8 sm:px-6 lg:px-8 text-center bg-gradient-to-br from-green-700 via-emerald-600 to-green-800 rounded-3xl shadow-2xl animate-fadeInUp mb-4 max-w-7xl mx-auto"
       >
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-extrabold text-white mb-6">Ready to explore our services?</h2>
-          <p className="text-xl text-white opacity-90 mb-8">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-6">Ready to explore our services?</h2>
+          <p className="md:text-xl text-sm text-white opacity-90 mb-8">
             Join thousands of satisfied customers who trust Canada halal market Place for their lifestyle needs.
           </p>
-          <button className="bg-white text-green-800 font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:bg-gray-100 transition duration-300 hover:scale-105">
+          <button className="bg-white text-green-800 font-bold py-2.5 md:py-4 px-10 rounded-full text-xl shadow-lg hover:bg-gray-100 transition duration-300 hover:scale-105">
             Get Started
           </button>
         </div>

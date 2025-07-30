@@ -81,7 +81,7 @@ const MultiServiceHero = () => {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 md:gap-16 items-center w-full">
           <div className="z-10">
             <h1
-              className={`text-4xl md:text-5xl md:mt-0 mt-6 font-black text-gray-900 capitalize leading-tight mb-6 transform transition-all duration-1000 ${
+              className={`text-3xl md:text-5xl md:mt-0 mt-6 font-black text-gray-900 capitalize leading-tight mb-4 md:mb-6 transform transition-all duration-1000 ${
                 isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-12 opacity-0"
@@ -91,7 +91,7 @@ const MultiServiceHero = () => {
             </h1>
 
             <h2
-              className={`text-4xl md:text-5xl font-black bg-gradient-to-r from-green-600 via-green-500 to-emerald-500 bg-clip-text text-transparent mb-8 transform capitalize transition-all duration-1000 delay-300 ${
+              className={`text-3xl md:text-5xl font-black bg-gradient-to-r from-green-600 via-green-500 to-emerald-500 bg-clip-text text-transparent mb-4 md:mb-8 transform capitalize transition-all duration-1000 delay-300 ${
                 isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-12 opacity-0"
@@ -101,7 +101,7 @@ const MultiServiceHero = () => {
             </h2>
 
             <p
-              className={`text-xl text-gray-600 leading-relaxed mb-12 transform transition-all duration-1000 delay-500 ${
+              className={`md:text-xl text-[18px] text-gray-600 leading-relaxed md:mb-12 mb-8 transform transition-all duration-1000 delay-500 ${
                 isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-12 opacity-0"
@@ -113,7 +113,7 @@ const MultiServiceHero = () => {
             </p>
 
             <button
-              className={`inline-flex items-center gap-4 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-10 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-green-500/25 transform ${
+              className={`inline-flex items-center gap-4 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-6 md:px-10 py-2.5 md:py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-green-500/25 transform ${
                 isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-12 opacity-0"
@@ -125,7 +125,7 @@ const MultiServiceHero = () => {
             </button>
 
             <div
-              className={`bg-white/60 backdrop-blur-xl border border-gray-200 rounded-3xl p-8 mt-12 grid grid-cols-2 lg:grid-cols-4 gap-8 shadow-lg transform transition-all duration-1000 delay-700 ${
+              className={`bg-white/60 md:w-full w-[310px] backdrop-blur-xl border border-gray-200 rounded-3xl p-8 mt-12 grid grid-cols-2 lg:grid-cols-4 gap-8 shadow-lg transform transition-all duration-1000 delay-700 ${
                 isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-12 opacity-0"
@@ -149,7 +149,7 @@ const MultiServiceHero = () => {
             </div>
           </div>
 
-          <div className="relative h-[80vh] flex items-center justify-center md:h-[80vh] sm:h-[60vh]">
+          <div className="relative h-[95vh] flex items-center justify-center md:h-[80vh] sm:h-[60vh]">
             <div className="hidden md:block">
               <FloatingCard
                 service={services[0]}
@@ -174,14 +174,14 @@ const MultiServiceHero = () => {
             </div>
 
             <div
-              className={`w-88 h-[650px] md:w-84 md:h-[600px] bg-gradient-to-b from-gray-100 to-gray-200 rounded-[2rem] md:rounded-[3rem] p-3 md:p-5 shadow-2xl relative z-10 transform transition-all duration-1000 delay-900 ${
+              className={`w-80 h-[650px] md:w-84 md:h-[600px] bg-gradient-to-b from-gray-100 to-gray-200 rounded-[2rem] md:rounded-[3rem] p-3 md:p-5 shadow-2xl relative z-10 transform transition-all duration-1000 delay-900 ${
                 isVisible
                   ? "translate-x-0 opacity-100"
                   : "translate-x-24 opacity-0"
               }`}
             >
               <div className="w-full h-full bg-gray-900 rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden relative">
-                <div className="bg-gradient-to-r from-green-600 to-emerald-600 p-2 md:p-6 flex md:gap-4 text-white">
+                <div className="bg-gradient-to-r from-green-600 to-emerald-600 p-3 md:p-6 flex md:gap-4 text-white">
                   <img
                     src="./logo.png"
                     className="w-16 pt-4 mb-4 mx-auto"
@@ -216,7 +216,7 @@ const MultiServiceHero = () => {
           </div>
         </div>
 
-        <div className="absolute md:bottom-0  left-1/2 transform -translate-x-1/2 text-gray-400 animate-bounce mb-4 -bottom-12 text-center">
+        <div className="absolute md:bottom-0  left-1/2 transform -translate-x-1/2 text-gray-400 animate-bounce mb-4 -bottom-0 text-center">
           <div className="text-2xl">↓</div>
           <div className="text-sm mt-2">Scroll for more</div>
         </div>
@@ -261,12 +261,12 @@ const MultiServiceHero = () => {
           </div>
 
           {/* Unified CTA Section */}
-          <section className="mt-20 py-16 px-4 sm:px-6 lg:px-8 text-center rounded-3xl shadow-2xl bg-gradient-to-br from-green-700 via-emerald-600 to-green-800">
+          <section className="md:mt-20 mt-10 py-10 md:py-16 px-4 sm:px-6 lg:px-8 text-center rounded-3xl shadow-2xl bg-gradient-to-br from-green-700 via-emerald-600 to-green-800">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-4xl font-black text-white mb-6">
+              <h2 className="text-2xl md:text-4xl font-black text-white mb-6">
                 Ready to explore our services?
               </h2>
-              <p className="text-xl text-white opacity-90 mb-8">
+              <p className="text-lg md:text-xl text-white opacity-90 mb-8">
                 Join thousands of satisfied customers who trust Canada Halal
                 Market Place for their lifestyle needs. Download our app now and
                 get started!

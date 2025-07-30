@@ -15,7 +15,7 @@ const Navbar = () => {
             <img
               src="./logo.png"
               className="w-20 h-20"
-             onClick={() => router.push("/")}
+              onClick={() => router.push("/")}
               alt="Logo"
             />
           </div>
@@ -42,25 +42,37 @@ const Navbar = () => {
                   <ul className="absolute left-0  w-48 bg-green-50 rounded-lg shadow-lg py-1.5 z-20 transition-all duration-300 animate-fadeIn">
                     <li
                       className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
-                      onClick={() => router.push("/CHMPRide")}
+                      onClick={() => {
+                        setIsMobileMenuOpen(!isMobileMenuOpen);
+                        router.push("/CHMPRide");
+                      }}
                     >
                       CHMP Ride
                     </li>
                     <li
                       className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
-                      onClick={() => router.push("/Food-Delivery")}
+                      onClick={() => {
+                        setIsMobileMenuOpen(!isMobileMenuOpen);
+                        router.push("/Food-Delivery");
+                      }}
                     >
                       Food Delivery
                     </li>
                     <li
                       className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
-                      onClick={() => router.push("/Online-Shopping")}
+                      onClick={() => {
+                        setIsMobileMenuOpen(!isMobileMenuOpen);
+                        router.push("/Online-Shopping");
+                      }}
                     >
                       Online Shopping
                     </li>
                     <li
                       className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
-                      onClick={() => router.push("/Grocery-Delivery")}
+                      onClick={() => {
+                        setIsMobileMenuOpen(!isMobileMenuOpen);
+                        router.push("/Grocery-Delivery");
+                      }}
                     >
                       Grocery Delivery
                     </li>
@@ -137,7 +149,10 @@ const Navbar = () => {
                 <li>
                   <button
                     className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-green-50"
-                    onClick={() => router.push("/CHMPRide")}
+                    onClick={() => {
+                      setIsMobileMenuOpen(!isMobileMenuOpen);
+                      router.push("/CHMPRide");
+                    }}
                   >
                     CHMP Ride
                   </button>
@@ -145,7 +160,10 @@ const Navbar = () => {
                 <li>
                   <button
                     className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-green-50"
-                    onClick={() => router.push("/Food-Delivery")}
+                    onClick={() => {
+                      setIsMobileMenuOpen(!isMobileMenuOpen);
+                      router.push("/Food-Delivery");
+                    }}
                   >
                     Food Delivery
                   </button>
@@ -153,7 +171,10 @@ const Navbar = () => {
                 <li>
                   <button
                     className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-green-50"
-                    onClick={() => router.push("/Online-Shopping")}
+                    onClick={() => {
+                      setIsMobileMenuOpen(!isMobileMenuOpen);
+                      router.push("/Online-Shopping");
+                    }}
                   >
                     Online Shopping
                   </button>
@@ -161,7 +182,10 @@ const Navbar = () => {
                 <li>
                   <button
                     className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-green-50"
-                    onClick={() => router.push("/Grocery-Delivery")}
+                    onClick={() => {
+                      setIsMobileMenuOpen(!isMobileMenuOpen);
+                      router.push("/Grocery-Delivery");
+                    }}
                   >
                     Grocery Delivery
                   </button>
@@ -170,13 +194,19 @@ const Navbar = () => {
             </div>
             <button
               className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-              onClick={() => (window.location.href = "/AboutUs")}
+              onClick={() => {
+                setIsMobileMenuOpen(!isMobileMenuOpen);
+                router.push("/AboutUs");
+              }}
             >
               About us
             </button>
             <button
               className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-              onClick={() => (window.location.href = "/Faq")}
+              onClick={() => {
+                setIsMobileMenuOpen(!isMobileMenuOpen);
+                router.push("/Faq");
+              }}
             >
               Faqs
             </button>

@@ -32,13 +32,13 @@ const rideSections = [
   return (
     <div className="min-h-screen  bg-gradient-to-br from-blue-50 to-green-50 text-gray-800">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto bg-gradient-to-r from-blue-100 via-green-50 to-blue-50 rounded-3xl shadow-2xl mb-12">
+      <section className="md:py-18 py-8 px-8 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto bg-gradient-to-r from-blue-100 via-green-50 to-blue-50 rounded-3xl shadow-2xl mb-12">
         <div className="md:w-1/2 text-left md:pr-12">
-          <h1 className="text-5xl md:text-6xl font-black text-blue-700 mb-6 animate-fadeInUp">CHMP Ride</h1>
+          <h1 className="text-4xl md:text-6xl font-black text-blue-700 md:mb-4 mb-2 animate-fadeInUp">CHMP Ride</h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 animate-fadeIn">Your journey, your way.<br/>Book safe, reliable rides for every occasion.<br/><span className="text-blue-600 font-bold">Adventure, comfort, and convenience!</span><br/><br/>With CHMP Ride, you get instant booking, real-time tracking, and a choice of vehicles for every need. Our drivers are background-checked and our cars are sanitized regularly for your safety.</p>
           <button className="bg-gradient-to-r from-blue-600 to-green-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-scaleIn mt-2">Book a Ride</button>
         </div>
-        <div className="md:mt-0 mt-8 md:w-[600px] w-[370px] flex justify-center animate-scaleIn">
+        <div className="md:mt-0 mt-8 md:w-[600px] w-[330px] flex justify-center animate-scaleIn">
           <img
             src="./camp-hero.jpg"
             alt="CHMP Ride Hero"
@@ -52,7 +52,7 @@ const rideSections = [
       {rideSections.map((section, idx) => (
         <section
           key={idx}
-          className={`py-16 px-4 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto ${idx % 2 === 1 ? "md:flex-row-reverse" : ""}`}
+          className={`md:py-16 py-8 px-8 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto ${idx % 2 === 1 ? "md:flex-row-reverse" : ""}`}
         >
           <div className="md:w-1/2 animate-fadeInUp">
             <img
@@ -63,15 +63,15 @@ const rideSections = [
             />
           </div>
           <div className="md:w-1/2 animate-fadeInUp">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4">{section.title}</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-blue-700 mb-4">{section.title}</h2>
             <p className="text-lg text-gray-700 mb-4" style={{whiteSpace: 'pre-line'}}>{section.desc}</p>
           </div>
         </section>
       ))}
 
       {/* Features Section */}
-      <section className="py-16 px-4 sm:px-8 lg:px-16 bg-white rounded-3xl shadow-2xl max-w-7xl mx-auto mt-12 animate-fadeIn">
-        <h2 className="text-3xl md:text-4xl font-black text-blue-700 mb-8 text-center">Key Features</h2>
+      <section className="md:py-16 py-8 px-8 sm:px-8 lg:px-16 bg-white rounded-3xl shadow-2xl max-w-7xl mx-auto mt-12 animate-fadeIn">
+        <h2 className="text-2xl md:text-4xl font-black text-blue-700 mb-8 text-center">Key Features</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             {
@@ -105,8 +105,8 @@ const rideSections = [
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-8 lg:px-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-black text-blue-700 mb-6 animate-fadeInUp">Ready for your next ride?</h2>
+      <section className="md:py-16 py-8 px-4 sm:px-8 lg:px-16 text-center">
+        <h2 className="text-2xl md:text-4xl font-black text-blue-700 mb-6 animate-fadeInUp">Ready for your next ride?</h2>
         <p className="text-lg text-gray-700 mb-8 animate-fadeIn">Sign up now and enjoy safe, comfortable, and affordable rides with CHMP Ride.</p>
         <button className="bg-gradient-to-r from-blue-600 to-green-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-scaleIn">Book Now</button>
       </section>

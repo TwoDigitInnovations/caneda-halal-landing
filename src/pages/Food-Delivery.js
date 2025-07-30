@@ -32,8 +32,8 @@ export default function FoodDelivery() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 text-gray-800">
       {/* Hero Section */}
-      <section className="py-16 px-4 sm:px-8 lg:px-16 flex flex-col items-center text-center max-w-7xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-black text-green-700 mb-6 animate-fadeInUp">CanadaHalal Food Delivery</h1>
+      <section className="md:py-16 py-8 px-8 sm:px-8 lg:px-16 flex flex-col items-center text-center max-w-7xl mx-auto">
+        <h1 className="text-3xl md:text-5xl font-black text-green-700 mb-6 animate-fadeInUp">CanadaHalal Food Delivery</h1>
         <p className="text-xl md:text-2xl text-gray-700 max-w-2xl mb-8 animate-fadeIn">Fresh, halal, and delivered fast. Discover the easiest way to enjoy delicious meals at home or work.</p>
         <img
           src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
@@ -46,7 +46,7 @@ export default function FoodDelivery() {
       {foodSections.map((section, idx) => (
         <section
           key={idx}
-          className={`py-12 px-4 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto ${idx % 2 === 1 ? "md:flex-row-reverse" : ""}`}
+          className={`md:py-12 py-8 px-8 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto ${idx % 2 === 1 ? "md:flex-row-reverse" : ""}`}
         >
           <div className="md:w-1/2 animate-fadeInUp">
             <img
@@ -57,15 +57,15 @@ export default function FoodDelivery() {
             />
           </div>
           <div className="md:w-1/2 animate-fadeInUp">
-            <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-4">{section.title}</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-green-700 mb-4">{section.title}</h2>
             <p className="text-lg text-gray-700 mb-4" style={{whiteSpace: 'pre-line'}}>{section.desc}</p>
           </div>
         </section>
       ))}
 
       {/* Features Section */}
-      <section className="py-16 px-4 sm:px-8 lg:px-16 bg-white rounded-3xl shadow-2xl max-w-7xl mx-auto mt-12 animate-fadeIn">
-        <h2 className="text-3xl md:text-4xl font-black text-green-700 mb-8 text-center">Key Features</h2>
+      <section className="md:py-16 py-8 px-8 sm:px-8 lg:px-16 bg-white rounded-3xl shadow-2xl max-w-7xl mx-auto mt-12 animate-fadeIn">
+        <h2 className="text-2xl md:text-4xl font-black text-green-700 mb-8 text-center">Key Features</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             {
@@ -99,7 +99,7 @@ export default function FoodDelivery() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-8 lg:px-16 text-center">
+      <section className="md:py-16 py-10 px-8 sm:px-8 lg:px-16 text-center">
         <h2 className="text-3xl md:text-4xl font-black text-green-700 mb-6 animate-fadeInUp">Ready to order?</h2>
         <p className="text-lg text-gray-700 mb-8 animate-fadeIn">Sign up now and enjoy exclusive offers, fast delivery, and the best halal food experience in Canada.</p>
         <button className="bg-gradient-to-r from-green-600 to-emerald-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-scaleIn">Order Now</button>

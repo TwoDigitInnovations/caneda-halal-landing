@@ -32,13 +32,13 @@ export default function OnlineShopping() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 text-gray-800">
    
-      <section className="py-20 px-4 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto bg-gradient-to-r from-green-100 via-blue-50 to-green-50 rounded-3xl shadow-2xl mb-8">
+      <section className="md:py-20 py-8 px-8 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto bg-gradient-to-r from-green-100 via-blue-50 to-green-50 rounded-3xl shadow-2xl mb-8">
         <div className="md:w-1/2 text-left md:pr-12">
-          <h1 className="text-5xl md:text-6xl font-black text-green-700 mb-6 animate-fadeInUp">CanadaHalal Online Shopping</h1>
+          <h1 className="text-3xl md:text-6xl font-black text-green-700 mb-6 animate-fadeInUp">CanadaHalal Online Shopping</h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 animate-fadeIn">Shop smarter, live better.<br/>Discover the best products and deals, delivered to your door.<br/><span className="text-green-600 font-bold">Fashion, electronics, groceries, and more!</span></p>
           <button className="bg-gradient-to-r from-green-600 to-emerald-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-scaleIn mt-2">Start Shopping</button>
         </div>
-        <div className="md:w-[600px] w-[370px] mt-4 md:mt-0 flex justify-center animate-scaleIn">
+        <div className="md:w-[600px] w-[330px] mt-6 md:mt-0 flex justify-center animate-scaleIn">
           <img
             src="https://images.pexels.com/photos/3965544/pexels-photo-3965544.jpeg?auto=compress&w=800&q=80"
             alt="Online Shopping Hero"
@@ -51,7 +51,7 @@ export default function OnlineShopping() {
       {shoppingSections.map((section, idx) => (
         <section
           key={idx}
-          className={`py-16 px-4 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto ${idx % 2 === 1 ? "md:flex-row-reverse" : ""}`}
+          className={`md:py-16 py-10 px-8 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto ${idx % 2 === 1 ? "md:flex-row-reverse" : ""}`}
         >
           <div className="md:w-1/2 animate-fadeInUp">
             <img
@@ -69,7 +69,7 @@ export default function OnlineShopping() {
       ))}
 
       {/* Features Section */}
-      <section className="py-16 px-4 sm:px-8 lg:px-16 bg-white rounded-3xl shadow-2xl max-w-7xl mx-auto mt-12 animate-fadeIn">
+      <section className="md:py-16 py-10 px-8 sm:px-8 lg:px-16 bg-white rounded-3xl shadow-2xl max-w-7xl mx-auto mt-12 animate-fadeIn">
         <h2 className="text-3xl md:text-4xl font-black text-green-700 mb-8 text-center">Key Features</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
@@ -104,7 +104,7 @@ export default function OnlineShopping() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-8 lg:px-16 text-center">
+      <section className="md:py-16 py-10 px-8 sm:px-8 lg:px-16 text-center">
         <h2 className="text-3xl md:text-4xl font-black text-green-700 mb-6 animate-fadeInUp">Start Shopping Today!</h2>
         <p className="text-lg text-gray-700 mb-8 animate-fadeIn">Create your account and unlock exclusive deals, fast delivery, and a world of products at your fingertips.</p>
         <button className="bg-gradient-to-r from-green-600 to-emerald-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-scaleIn">Shop Now</button>

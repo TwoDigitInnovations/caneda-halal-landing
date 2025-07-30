@@ -62,22 +62,22 @@ export default function Faq() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-100 to-blue-100 flex items-center justify-center px-4 py-10">
-      <div className="w-full max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-8">
-        <h2 className="text-3xl font-bold text-center mb-8 text-green-700 animate-fade-in">
+      <div className="w-full max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl md:p-8 p-4">
+        <h2 className="text-xl md:text-3xl font-bold text-center mb-8 text-green-700 animate-fade-in">
           Frequently Asked Questions
         </h2>
-        <div className="space-y-4">
+        <div className="md:space-y-4 space-y-2">
           {faqData.map((faq, idx) => (
             <div
               key={idx}
-              className="border border-green-300 rounded-xl overflow-hidden transition-shadow duration-300 hover:shadow-lg bg-gradient-to-r from-white to-green-50 cursor-pointer animate-fade-in"
+              className="border border-green-300 rounded-xl transition-shadow duration-300 hover:shadow-lg bg-gradient-to-r from-white to-green-50 cursor-pointer animate-fade-in"
             >
               <button
-                className="w-full flex justify-between items-center px-6 py-4 focus:outline-none text-lg font-medium text-green-800"
+                className="w-full flex justify-between items-center px-4 md:px-6 md:py-4 py-2 focus:outline-none font-medium text-green-800"
                 onClick={() => handleToggle(idx)}
                 aria-expanded={activeIndex === idx}
               >
-                <span className="transition-colors duration-300">
+                <span className="transition-colors duration-300 md:text-lg text-sm">
                   {faq.question}
                 </span>
                 <span
@@ -89,7 +89,7 @@ export default function Faq() {
                 </span>
               </button>
               <div
-                className={`px-6 pb-4 text-gray-700 text-base transition-all duration-500 ease-in-out ${
+                className={`md:px-6 px-4 pb-4 md:text-lg text-sm text-gray-700  transition-all duration-500 ease-in-out ${
                   activeIndex === idx
                     ? "max-h-40 opacity-100 animate-slide-down"
                     : "max-h-0 opacity-0 overflow-hidden"
