@@ -1,12 +1,33 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { useRouter } from "next/router";
-
+import { useTranslation } from "react-i18next";
+import { languageContext } from "@/pages/_app";
+import { Languages } from "lucide-react";
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [open, setopen] = useState(false);
+  const [lang, setLang] = useState(null);
+  const [globallang, setgloballang] = useContext(languageContext);
+  const { i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const router = useRouter();
+
+  function handleClick(idx) {
+    try {
+      setLang(idx);
+      console.log("Language changed to:", idx);
+      const language = idx || "en";
+      console.log(language);
+      i18n.changeLanguage(language);
+      setgloballang(language);
+      localStorage.setItem("LANGUAGE", language);
+    } catch (err) {
+      console.log(err.message);
+    }
+  }
+
   return (
     <nav className="bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,7 +49,7 @@ const Navbar = () => {
             >
               <div>
                 <button className="relative flex items-center font-semibold text-gray-700 hover:text-gray-900 px-2 py-2 cursor-pointer transition-colors duration-200 hover:bg-green-50 rounded-xl group focus:outline-none">
-                  Canada Halal Services
+                  {t("Canada Halal Services")}
                   <span
                     className={`ml-1 transition-transform duration-300 ${
                       open ? "rotate-180" : "rotate-0"
@@ -47,7 +68,7 @@ const Navbar = () => {
                         router.push("/CHMPRide");
                       }}
                     >
-                      CHMP Ride
+                      {t("CHMP Ride")}
                     </li>
                     <li
                       className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
@@ -56,7 +77,7 @@ const Navbar = () => {
                         router.push("/Food-Delivery");
                       }}
                     >
-                      Food Delivery
+                      {t("Food Delivery")}
                     </li>
                     <li
                       className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
@@ -65,7 +86,7 @@ const Navbar = () => {
                         router.push("/Online-Shopping");
                       }}
                     >
-                      Online Shopping
+                      {t("Online Shopping")}
                     </li>
                     <li
                       className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
@@ -74,7 +95,7 @@ const Navbar = () => {
                         router.push("/GroceryDelivery");
                       }}
                     >
-                      Grocery Delivery
+                      {t("Grocery Delivery")}
                     </li>
                   </ul>
                 )}
@@ -101,16 +122,59 @@ const Navbar = () => {
               className="relative flex items-center font-semibold text-gray-700 hover:text-gray-900 px-2 py-2 cursor-pointer rounded-md roun transition-colors duration-200 hover:bg-neutral-100 group"
               onClick={() => router.push("/AboutUs")}
             >
-              About us
+              {t("Aboutus")}
               <span className="absolute left-0 bottom-0 w-full h-[2px] bg-green-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
             </button>
             <button
               className="relative flex items-center font-semibold text-gray-700 hover:text-gray-900 px-2 py-2 rounded-md cursor-pointer transition-colors duration-200 hover:bg-neutral-100 group"
               onClick={() => router.push("/Faq")}
             >
-              Faqs
+              {t("Faqs")}
               <span className="absolute left-0 bottom-0 w-full h-[2px] bg-green-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
             </button>
+            <div className="rounded-lg lg:flex hidden">
+              <div className="relative w-[120px]">
+                <Languages className="absolute left-3 top-1/2 transform -translate-y-1/2 text-green-600 w-5 h-5 pointer-events-none" />
+                <select
+                  className="appearance-none bg-green-50  border border-green-200 rounded-xl py-2 pl-10 pr-4 text-base font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 shadow-sm transition-all duration-200 hover:border-green-400"
+                  value={lang || "en"}
+                  onChange={(e) => handleClick(e.target.value)}
+                  style={{ minWidth: 130 }}
+                  onFocus={(e) => {
+                    e.target.classList.add(
+                      "bg-green-50",
+                      "rounded-2xl",
+                      "text-center"
+                    );
+                  }}
+                  onBlur={(e) => {
+                    e.target.classList.remove(
+                      "bg-green-50",
+                      "rounded-2xl",
+                      "text-center"
+                    );
+                  }}
+                >
+                  <option value="en">English</option>
+                  <option value="fr">French</option>
+                  <option value="ar">Arabic</option>
+                  <option value="pt">Portuguese</option>
+                  <option value="wo">Wolof</option>
+                  <option value="zh">Chinese</option>
+                </select>
+                {/* <span className="pointer-events-none absolute right-3 top-1/2 transform -translate-y-1/2 text-green-400">
+                  <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
+                    <path
+                      d="M7 10l5 5 5-5"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span> */}
+              </div>
+            </div>
           </div>
 
           <div className="md:hidden flex items-center">
@@ -137,13 +201,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <div className="mb-2">
               <span className="block px-3 py-2 rounded-md text-base font-bold text-green-700">
-                Canada Halal Services
+                {t("Canada Halal Services")}
               </span>
               <ul className="pl-2">
                 <li>
@@ -154,7 +217,7 @@ const Navbar = () => {
                       router.push("/CHMPRide");
                     }}
                   >
-                    CHMP Ride
+                    {t("CHMP Ride")}
                   </button>
                 </li>
                 <li>
@@ -165,7 +228,7 @@ const Navbar = () => {
                       router.push("/Food-Delivery");
                     }}
                   >
-                    Food Delivery
+                    {t("Food Delivery")}
                   </button>
                 </li>
                 <li>
@@ -176,7 +239,7 @@ const Navbar = () => {
                       router.push("/Online-Shopping");
                     }}
                   >
-                    Online Shopping
+                    {t("Online Shopping")}
                   </button>
                 </li>
                 <li>
@@ -187,7 +250,7 @@ const Navbar = () => {
                       router.push("/GroceryDelivery");
                     }}
                   >
-                    Grocery Delivery
+                    {t("Grocery Delivery")}
                   </button>
                 </li>
               </ul>
@@ -199,7 +262,7 @@ const Navbar = () => {
                 router.push("/AboutUs");
               }}
             >
-              About us
+              {t("Aboutus")}
             </button>
             <button
               className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
@@ -208,8 +271,22 @@ const Navbar = () => {
                 router.push("/Faq");
               }}
             >
-              Faqs
+              {t("Faqs")}
             </button>
+            <div className="mt-4 px-3">
+              <select
+                className="w-full bg-white py-2 px-3  text-base font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 shadow-sm"
+                value={lang || "en"}
+                onChange={(e) => handleClick(e.target.value)}
+              >
+                 <option value="en">English</option>
+                  <option value="fr">French</option>
+                  <option value="ar">Arabic</option>
+                  <option value="pt">Portuguese</option>
+                  <option value="wo">Wolof</option>
+                  <option value="zh">Chinese</option>
+              </select>
+            </div>
           </div>
         </div>
       )}
