@@ -97,6 +97,15 @@ const Navbar = () => {
                     >
                       {t("Grocery Delivery")}
                     </li>
+                     <li
+                      className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
+                      onClick={() => {
+                        setIsMobileMenuOpen(!isMobileMenuOpen);
+                        router.push("/CourierColis");
+                      }}
+                    >
+                      {t("Courier & Colis")}
+                    </li>
                   </ul>
                 )}
               </div>
