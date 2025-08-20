@@ -2,7 +2,7 @@ import { Bike, Utensils, ShoppingCart, Briefcase, Info, Facebook, Linkedin, Inst
 import { useTranslation } from "react-i18next";
 import { LuBriefcaseBusiness } from "react-icons/lu";
 import { useRouter } from "next/router";
-
+import { FaTiktok } from "react-icons/fa6";
 export default function Footer() {
   const { t } = useTranslation();
   const router = useRouter();
@@ -34,6 +34,9 @@ export default function Footer() {
                 </a>
                 <a href="https://www.youtube.com/@canadahalalmarketplace" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200 transition-transform hover:scale-110">
                   <Youtube className="w-6 h-6" />
+                </a>
+                 <a href="https://www.tiktok.com/@canadahalalmarketplace?_t=ZS-8z23hIDJkLC&_r=1" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200 transition-transform hover:scale-110">
+                  <FaTiktok className="text-xl" />
                 </a>
                 <a href="https://ca.pinterest.com/canadahalalmarketplace/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200 transition-transform hover:scale-110">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">

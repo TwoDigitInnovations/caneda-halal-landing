@@ -82,21 +82,18 @@ const AboutUs = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
            
             <div className="bg-white p-8 rounded-2xl shadow-xl text-center animate-scaleIn hover:-translate-y-2 transition-transform duration-300">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center bg-gradient-to-br from-green-600 to-emerald-500 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                </svg>
+              <div className=" mx-auto mb-4 rounded-full flex items-center justify-center ">
+                  <img src='online-booking.png'/>
               </div>
+            
               <h3 className="text-xl font-bold mb-3">{t("CHMP & Ride Booking")}</h3>
               <p className="text-gray-600">
                 {t("Book safe, reliable, and on-demand rides with real-time tracking. Whether it is a daily commute or a weekend trip, travel comfortably at your convenience.")}
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-xl text-center animate-scaleIn hover:-translate-y-2 transition-transform duration-300 delay-100">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center bg-gradient-to-br from-green-600 to-emerald-500 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-                </svg>
+             <div className=" mx-auto mb-4 rounded-full flex items-center justify-center ">
+                  <img src='delivery.png'/>
               </div>
               <h3 className="text-xl font-bold mb-3">{t("Food Delivery")}</h3>
               <p className="text-gray-600">
@@ -104,10 +101,8 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-xl text-center animate-scaleIn hover:-translate-y-2 transition-transform duration-300 delay-200">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center bg-gradient-to-br from-green-600 to-emerald-500 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
+            <div className=" mx-auto mb-4 rounded-full flex items-center justify-center ">
+                  <img src='shopping-bag.png'/>
               </div>
               <h3 className="text-xl font-bold mb-3">{t("Grocery Delivery")}</h3>
               <p className="text-gray-600">
@@ -115,10 +110,8 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-xl text-center animate-scaleIn hover:-translate-y-2 transition-transform duration-300 delay-300">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center bg-gradient-to-br from-green-600 to-emerald-500 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                </svg>
+              <div className=" mx-auto mb-4 rounded-full flex items-center justify-center ">
+                  <img src='online-shopping.png'/>
               </div>
               <h3 className="text-xl font-bold mb-3">{t("Online Shopping")}</h3>
               <p className="text-gray-600">
