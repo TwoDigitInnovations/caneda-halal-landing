@@ -16,7 +16,7 @@ export default function FoodDelivery() {
           )}
         </p>
         <img
-          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+          src="./food-delivery.jpg"
           alt="Food Delivery Hero"
           className="rounded-2xl shadow-xl w-full max-w-xl object-cover animate-scaleIn"
         />
@@ -25,14 +25,14 @@ export default function FoodDelivery() {
       <section className="md:py-12 py-8 px-8 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto">
         <div className="md:w-1/2 animate-fadeInUp">
           <img
-            src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=800&q=80"
+            src="./food-delivery2.jpg"
             alt="Why Choose CanadaHalal Food Delivery?"
             className="rounded-2xl shadow-lg w-full object-cover mb-8 md:mb-0 h-64 md:h-88"
-            onError={(e) => {
-              e.target.onerror = null;
-              e.target.src =
-                "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80";
-            }}
+            // onError={(e) => {
+            //   e.target.onerror = null;
+            //   e.target.src =
+            //     "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80";
+            // }}
           />
         </div>
         <div className="md:w-1/2 animate-fadeInUp">

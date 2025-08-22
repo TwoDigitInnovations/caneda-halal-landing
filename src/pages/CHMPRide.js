@@ -30,7 +30,7 @@ const HeroSection = () => {
       </div>
       <div className="md:mt-0 mt-8 md:w-[600px] w-[330px] flex justify-center animate-scaleIn">
         <img
-          src="./camp-hero.jpg"
+          src="./champ_ride.jpg"
           alt="CHMP Ride Hero"
           className="rounded-[1.5rem] shadow-2xl w-full object-cover border-4 border-blue-200"
           onError={(e) => {
@@ -49,7 +49,7 @@ const WelcomeSection = () => {
     <section className="md:py-16 py-8 px-8 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto">
       <div className="md:w-1/2 animate-fadeInUp">
         <img
-          src="./camp.jpg"
+          src="./chmp-ride2.jpg"
           alt="Welcome to CHMP Ride"
           className="rounded-2xl shadow-lg w-full object-cover mb-8 md:mb-0 h-64 md:h-88"
           onError={(e) => {
@@ -85,7 +85,7 @@ const HowItWorksSection = () => {
     <section className="md:py-16 py-8 px-8 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto md:flex-row-reverse">
       <div className="md:w-1/2 animate-fadeInUp">
         <img
-          src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
+          src="./champ_ride2.jpg"
           alt="How It Works"
           className="rounded-2xl shadow-lg w-full object-cover mb-8 md:mb-0 h-64 md:h-88"
           onError={(e) => {
@@ -118,7 +118,7 @@ const WhyChooseSection = () => {
     <section className="md:py-16 py-8 px-8 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto">
       <div className="md:w-1/2 animate-fadeInUp">
         <img
-          src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=80"
+          src="./chmp-ride.jpg"
           alt="Why Choose CHMP Ride?"
           className="rounded-2xl shadow-lg w-full object-cover mb-8 md:mb-0 h-64 md:h-88"
           onError={(e) => {

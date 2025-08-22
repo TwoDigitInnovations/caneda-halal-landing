@@ -51,7 +51,7 @@ const CourierWebsite = () => {
                         <div className={`space-y-8 transform transition-all duration-1000 ${animateHero ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}>
                             <h1 className="text-5xl lg:text-6xl font-bold text-green-800 leading-tight">
                                 {t("Fast & Reliable")}
-                                <span className="block text-green-600">{t("Courier Service")}</span>
+                                <span className="block text-green-600">{t("Parcel Service")}</span>
                             </h1>
                             <p className="text-xl text-gray-600 leading-relaxed">
                                 {t("Have someone deliver items for you. Professional courier services with same-day delivery across the city. Whether it's documents, packages, gifts, or business deliveries, we ensure your items reach their destination safely and on time")}.

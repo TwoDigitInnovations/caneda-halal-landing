@@ -26,7 +26,7 @@ function GroceryDelivery() {
         </div>
         <div className="md:w-[600px] w-[330px] mt-6 md:mt-0 flex justify-center animate-scaleIn">
           <img
-            src="https://images.unsplash.com/photo-1588964895597-cfccd6e2dbf9?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="./grocery_delivery2.jpg"
             alt="Grocery Delivery Hero"
             className="rounded-[2.5rem] shadow-2xl w-full object-cover border-4 border-green-200"
             onError={(e) => {
@@ -40,7 +40,7 @@ function GroceryDelivery() {
       <section className="py-10 px-8 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto">
         <div className="md:w-1/2 animate-fadeInUp">
           <img
-            src="https://images.unsplash.com/photo-1526470498-9ae73c665de8?q=80&w=998&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="./grocery_delivery3.jpg"
             alt="Fresh Groceries Delivered Fast"
             className="rounded-2xl shadow-lg w-full object-cover mb-8 md:mb-0 h-64 md:h-88"
             onError={(e) => {
@@ -69,7 +69,7 @@ function GroceryDelivery() {
       <section className="py-10 px-8 sm:px-8 lg:px-16 flex flex-col md:flex-row-reverse items-center gap-12 max-w-7xl mx-auto">
         <div className="md:w-1/2 animate-fadeInUp">
           <img
-            src="https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&w=800&q=80"
+            src="./grocery_delivery.jpg"
             alt="How It Works"
             className="rounded-2xl shadow-lg w-full object-cover mb-8 md:mb-0 h-64 md:h-88"
             onError={(e) => {

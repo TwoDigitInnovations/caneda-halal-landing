@@ -20,7 +20,7 @@ export default function OnlineShopping() {
         </div>
         <div className="md:w-[600px] w-[330px] mt-6 md:mt-0 flex justify-center animate-scaleIn">
           <img
-            src="https://images.pexels.com/photos/3965544/pexels-photo-3965544.jpeg?auto=compress&w=800&q=80"
+            src="./onlineShopping2.jpg"
             alt="Online Shopping Hero"
             className="rounded-[2.5rem] shadow-2xl w-full object-cover border-4 border-green-200"
           />
@@ -31,7 +31,7 @@ export default function OnlineShopping() {
       <section className="md:py-16 py-10 px-8 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto">
         <div className="md:w-1/2 animate-fadeInUp">
           <img
-            src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&w=800&q=80"
+            src="./onlineShopping.jpg"
             alt="Welcome to CanadaHalal Online Shopping"
             className="rounded-2xl shadow-lg w-full object-cover mb-8 md:mb-0 h-64 md:h-88"
             onError={e => { e.target.onerror = null; e.target.src = "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&w=800&q=80"; }}

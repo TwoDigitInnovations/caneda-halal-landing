@@ -51,9 +51,8 @@ const Navbar = () => {
                 <button className="relative flex items-center font-semibold text-gray-700 hover:text-gray-900 px-2 py-2 cursor-pointer transition-colors duration-200 hover:bg-green-50 rounded-xl group focus:outline-none">
                   {t("Canada Halal Services")}
                   <span
-                    className={`ml-1 transition-transform duration-300 ${
-                      open ? "rotate-180" : "rotate-0"
-                    }`}
+                    className={`ml-1 transition-transform duration-300 ${open ? "rotate-180" : "rotate-0"
+                      }`}
                   >
                     <FaChevronDown className="w-4 h-4" />
                   </span>
@@ -97,7 +96,7 @@ const Navbar = () => {
                     >
                       {t("Grocery Delivery")}
                     </li>
-                     <li
+                    <li
                       className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
                       onClick={() => {
                         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -262,6 +261,15 @@ const Navbar = () => {
                     {t("Grocery Delivery")}
                   </button>
                 </li>
+                <li
+                  className="px-4 py-2 hover:bg-green-100 text-gray-500 cursor-pointer flex items-center"
+                  onClick={() => {
+                    setIsMobileMenuOpen(!isMobileMenuOpen);
+                    router.push("/CourierColis");
+                  }}
+                >
+                  {t("Courier & Colis")}
+                </li>
               </ul>
             </div>
             <button
@@ -288,12 +296,12 @@ const Navbar = () => {
                 value={lang || "en"}
                 onChange={(e) => handleClick(e.target.value)}
               >
-                 <option value="en">English</option>
-                  <option value="fr">French</option>
-                  <option value="ar">Arabic</option>
-                  <option value="pt">Portuguese</option>
-                  <option value="wo">Wolof</option>
-                  <option value="zh">Chinese</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="ar">Arabic</option>
+                <option value="pt">Portuguese</option>
+                <option value="wo">Wolof</option>
+                <option value="zh">Chinese</option>
               </select>
             </div>
           </div>
