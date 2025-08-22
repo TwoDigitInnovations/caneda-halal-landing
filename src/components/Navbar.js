@@ -262,7 +262,7 @@ const Navbar = () => {
                   </button>
                 </li>
                 <li
-                  className="px-4 py-2 hover:bg-green-100 text-gray-700 cursor-pointer flex items-center"
+                  className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-green-50"
                   onClick={() => {
                     setIsMobileMenuOpen(!isMobileMenuOpen);
                     router.push("/CourierColis");
